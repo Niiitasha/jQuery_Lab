@@ -3,37 +3,46 @@
   <head>
     <meta charset="utf-8">
     <link href= "styles.css" type="text/css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>jQuery Lab</title>
   </head>
   <body>
-    <h1>Table Finder</h1>
-    <h2>Pick your table now</h2>
-    <div id= "centerbox">
-<div class = "circles"><p class="available" id= "one">1</p></div>
-<div class = "circles"><p class="available" id= "two">2</p></div>
-<div class = "circles"><p class="available" id= "three">3</p></div>
-<div class = "circles"><p class="available" id= "four">4</p></div>
-<div class = "circles"><p class="available" id= "five">5</p></div>
-<div class = "circles"><p class="available" id= "six">6</p></div>
-<div class = "circles"><p class="available" id= "seven">7</p></div>
-<div class = "circles"><p class="available" id= "eight">8</p></div>
-<div class = "circles"><p class="available" id= "nine">9</p></div>
-    </div>
 
-<form>
+<!-- Reservation Form -->
 
-<h3>New Reservation</h3>
-<h4 id= "table">Table Number:&nbsp;<span id="tablenum"></span></h4>
+  <form>
+       <i class = "material-icons" id = "exit" > clear </i>
+       <h3> New Reservation </h3>
+       <h4 id = "table" > Table Number:&nbsp; <span id = "tablenum" > </span> </h4>
 
+       <input type = "text" name = "firstname" placeholder = "Name" >
+       <input type = "text" placeholder = "Phone Number" >
+       <input type = "text" placeholder = "Number of Guests" >
 
-  <input type="text" name="firstname" placeholder= "Name">
+       <button id = "reserve" > SAVE </button>
+  </form>
 
-  <input type="text" placeholder= "Phone Number">
+    <!-- Table Chart -->
 
-  <input type="text" placeholder= "Number of Guests">
+    <h1> Table Finder </h1>
+    <h2> Pick your table now </h2>
 
-  <button>SAVE</button>
-</form>
+  <div id = "centerbox" >
+    <div class = "circles" > <p class = "available" id = "one" > 1 </p> </div>
+    <div class = "circles" > <p class = "available" id = "two" > 2 </p> </div>
+    <div class = "circles" > <p class = "available" id = "three" > 3 </p> </div>
+    <div class = "circles" > <p class = "available" id = "four" > 4 </p> </div>
+    <div class = "circles" > <p class = "available" id = "five" > 5 </p> </div>
+    <div class = "circles" > <p class = "available" id = "six" > 6 </p> </div>
+    <div class = "circles" > <p class = "available" id = "seven" > 7 </p> </div>
+    <div class = "circles" > <p class = "available" id = "eight" > 8 </p> </div>
+    <div class = "circles" > <p class = "available" id = "nine" > 9 </p> </div>
+  </div>
+
+  <script src = "jquery-3.2.1.js"></script>
+  <script src = "script.js"></script>
 
   </body>
 </html>
